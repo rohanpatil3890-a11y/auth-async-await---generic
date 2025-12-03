@@ -108,7 +108,7 @@ const onsubmitSignUp = async(eve) =>{
 
         snackbar(data.message, "success")
 
-
+       signUpForm.reset();
 
     }
     catch(err){
