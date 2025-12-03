@@ -5,13 +5,18 @@ if(localStorage.getItem("loginSuccess")){
     
     Swal.fire({
         title : "Login Successfully",
-        icon : "success"
+        icon : "success",
+        timer: 2000
     })
+
+    localStorage.removeItem("loginSuccess");
 }
 
 if(!localStorage.getItem("token")){
     window.location.href = "index.html";
 }
+
+
 
 const onclickEvent = () =>{
 
